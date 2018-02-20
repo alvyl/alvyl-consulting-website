@@ -1,0 +1,48 @@
+title = "Alvyl Consulting"
+baseURL = "https://alvyl.com/"
+tags = ["portfolio", "consulting"]
+languageCode = "en-us"
+config = "config.toml"
+theme = "osprey"
+canonifyURLS = true
+
+googleAnalytics = ""
+disqusShortname = "tomanistor"
+
+[Params]
+    tagline = "We build, therefore we are"
+    author = "Alvyl Creations"
+    description = "Software Consulting services, Cloud Based SaaS platforms and DevOps."
+    logoBig = "/images/alchemyconsulting_logo_256px.svg"
+    logoSmall = "/images/alchemyconsulting_logo_256px.svg"
+    favicon = "favicon.ico"
+    opengraphImage = "/images/alchemyconsulting_logo_256px.svg"
+    twitter = "alchemyvillage"
+    linkedin = "alvyl-consulting"
+    github = "alvyl"
+    email = "contact@alvyl.com"
+    googleTagManager = ""
+    highlightJS = true
+    copyright = true
+    credit = true
+    customCSS = false
+    cacheBustCSS = false
+    cacheBustJS = false
+    ajaxFormspree = true
+
+[[menu.main]]
+    name = "About"
+    url  = "/#about"
+    weight = 1
+[[menu.main]]
+    name = "Clients"
+    url  = "/#work"
+    weight = 2
+[[menu.main]]
+    name = "Team"
+    url  = "/#blog"
+    weight = 3
+[[menu.main]]
+    name = "Contact"
+    url  = "/#contact"
+    weight = 4
