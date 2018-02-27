@@ -1,5 +1,5 @@
 title = "Alvyl Consulting"
-baseURL = "https://alvyl.com/"
+baseURL = ""
 tags = ["portfolio", "consulting"]
 languageCode = "en-us"
 config = "config.toml"
@@ -17,7 +17,7 @@ disqusShortname = "tomanistor"
     logoSmall = "/images/alvylconsulting_logo_256px.svg"
     favicon = "favicon.ico"
     opengraphImage = "/images/alvylconsulting_logo_256px.svg"
-    twitter = "alvyl-consulting"
+    twitter = "alvylconsulting"
     linkedin = "alvyl-consulting"
     github = "alvyl"
     email = "contact@alvyl.com"
@@ -28,7 +28,7 @@ disqusShortname = "tomanistor"
     customCSS = false
     cacheBustCSS = false
     cacheBustJS = false
-    ajaxFormspree = true
+    ajaxFormspree = false
 
 [[menu.main]]
     name = "About"
