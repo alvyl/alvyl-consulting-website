@@ -1,0 +1,143 @@
+<section class="team" id="team">
+
+    <div class="row center-xs">
+        <div class="col-xs-6">
+            <h1>Our Team</h1>
+        </div>
+    </div>
+
+    <!--Ordering on the website depends on the date in their respective .md files, latest first-->
+    <div class="row center-xs">
+
+        {{ $teamTotal := len (where .Site.RegularPages "Section" "team") }} 
+        {{ $teamReverse := (where .Site.RegularPages.Reverse "Section" "team") }}
+
+        <!-- Where team is an odd total -->
+        {{ if not (modBool $teamTotal 2) }}
+            <!-- Where team is only one item, display it fully -->
+            {{ if eq $teamTotal 1 }} 
+                {{ range first 3 $teamReverse }}
+                <div class="col-xs-12 col-md-3" {{ if .Params.color }}style="background-color:{{ .Params.color }}" {{ end }}>
+                    <div class="row middle-xs center-xs">    
+                            <a href="{{ .Params.linkedin}}">
+                                <img src="/images/{{ .Params.image}}" {{ if .Params.alt }}alt="{{ .Params.alt }}" {{ end }}  width="200px" height="200px"/>
+                            </a>    
+                        </div>
+                        <div class="row middle-xs center-xs">
+                            <p>
+                                <span style="font-size: x-large">
+                                    {{ .Params.name }}
+                                </span><br>
+                                <span>
+                                    {{ .Params.title }}
+                                </span>
+                            </p>
+                        </div>
+                        <div class="row middle-xs center-xs">
+                            <p style="font-size: medium">
+                                <span>{{ .Params.description }}</span>
+                            </p>
+                        </div>    
+                </div>
+                {{ end }} 
+            {{ end }}
+            <!-- Where team is greater than 2 items, first 3 items display together on first row -->
+            {{ if gt $teamTotal 2 }} 
+                {{ range first 3 $teamReverse }}
+                <div class="col-xs-12 col-md-4" {{ if .Params.color }}style="background-color:{{ .Params.color }}" {{ end }}>
+                    <div class="row middle-xs center-xs">    
+                            <a href="{{ .Params.linkedin}}">
+                                <img src="/images/{{ .Params.image}}" {{ if .Params.alt }}alt="{{ .Params.alt }}" {{ end }}  width="200px" height="200px"/>
+                            </a>    
+                        </div>
+                        <div class="row middle-xs center-xs">
+                            <p>
+                                <span style="font-size: x-large">
+                                    {{ .Params.name }}
+                                </span><br>
+                                <span>
+                                    {{ .Params.title }}
+                                </span>
+                            </p>
+                        </div>
+                        <div class="row middle-xs center-xs">
+                            <p style="font-size: medium">
+                                <span>{{ .Params.description }}</span>
+                            </p>
+                        </div>    
+                </div>
+                {{ end }} 
+            {{ end }}
+            <!-- Where team is greater than 3 items, all items after the first 3 display evenly in grid colums and rows -->
+            {{ if gt $teamTotal 3 }} 
+                {{ range after 3 $teamReverse }}
+                <!-- Where team items are divisible by 3, they will appear in columns of 3 -->
+                {{ $col := (mod $teamTotal 3) }}
+                <div class="col-xs-12 col-md-4
+                            {{ if gt $teamTotal 5 }}
+                                {{ if eq $col 0 }} col-lg-4
+                                {{ else }} col-lg-3
+                                {{ end }}
+                            {{ end }}" {{ if .Params.color }}style="background-color:{{ .Params.color }}" {{ end }}>
+                        <div class="row middle-xs center-xs">    
+                            <a href="{{ .Params.linkedin}}">
+                                <img src="/images/{{ .Params.image}}" {{ if .Params.alt }}alt="{{ .Params.alt }}" {{ end }}  width="200px" height="200px"/>
+                            </a>    
+                        </div>
+                        <div class="row middle-xs center-xs">
+                            <p>
+                                <span style="font-size: x-large">
+                                    {{ .Params.name }}
+                                </span><br>
+                                <span>
+                                    {{ .Params.title }}
+                                </span>
+                            </p>
+                        </div>
+                        <div class="row middle-xs center-xs">
+                            <p style="font-size: medium">
+                                <span>{{ .Params.description }}</span>
+                            </p>
+                        </div>    
+                </div>
+                {{ end }} 
+            {{ end }} 
+        {{ end }}
+
+        <!-- Where team is an even total, all items display evenly in grid columns and rows -->
+        {{ if modBool $teamTotal 2 }} 
+            {{ range $teamReverse }}
+            <!-- Where team items are great than 7 and are divisible by 4, they will appear in colums of 4, else in colums of 2 or 3 -->
+            <div class="col-xs-12
+                    {{ if gt $teamTotal 1 }} col-md-4
+                        {{ if gt $teamTotal 7 }}
+                            {{ if modBool $teamTotal 4 }} col-lg-3
+                            {{ else }} col-lg-4
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}" {{ if .Params.color }}style="background-color:{{ .Params.color }}" {{ end }}>
+                    <div class="row middle-xs center-xs">    
+                        <a href="{{ .Params.linkedin}}">
+                            <img src="/images/{{ .Params.image}}" {{ if .Params.alt }}alt="{{ .Params.alt }}" {{ end }}  width="200px" height="200px"/>
+                        </a>    
+                    </div>
+                    <div class="row middle-xs center-xs">
+                        <p>
+                            <span style="font-size: x-large">
+                                {{ .Params.name }}
+                            </span><br>
+                            <span>
+                                {{ .Params.title }}
+                            </span>
+                        </p>
+                    </div>
+                    <div class="row middle-xs center-xs">
+                        <p style="font-size: medium">
+                            <span>{{ .Params.description }}</span>
+                        </p>
+                    </div>      
+                </div>
+            {{ end }} 
+        {{ end }}
+    </div>
+</section>
