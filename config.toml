@@ -7,7 +7,7 @@ theme = "osprey"
 canonifyURLS = true
 
 googleAnalytics = ""
-disqusShortname = "tomanistor"
+disqusShortname = "alvylconsulting"
 
 [Params]
     tagline = "We build, therefore we are . . . "
@@ -40,7 +40,7 @@ disqusShortname = "tomanistor"
     weight = 2
 [[menu.main]]
     name = "Team"
-    url  = "/#blog"
+    url  = "/#team"
     weight = 3
 [[menu.main]]
     name = "Contact"
