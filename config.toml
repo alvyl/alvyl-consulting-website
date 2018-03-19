@@ -6,7 +6,7 @@ config = "config.toml"
 theme = "osprey"
 canonifyURLS = true
 
-googleAnalytics = ""
+googleAnalytics = "UA-115982595-1"
 disqusShortname = "alvylconsulting"
 
 [Params]
