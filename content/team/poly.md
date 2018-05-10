@@ -5,6 +5,6 @@ name = "Poly Dey"
 image = "poly.png"
 linkedin = "https://www.linkedin.com/in/poly-dey/"
 title = "Junior Consultant"
-description = "Passionate Engineer, with a very strong work ethic who loves to play with Data. A Dreamer. Likes riding to the mountains."
+description = "Passionate engineer, with a very strong work ethic who loves to play with data. A dreamer. Likes riding to the mountains."
 
 +++
