@@ -3,8 +3,8 @@
 date = "2018-03-19T00:00:05+05:30"
 name = "Darshan A M"
 image = "darshan.png"
-linkedin = "https://www.linkedin.com/in/darshan-varabhi-a54484a3/"
+linkedin = "https://www.linkedin.com/in/darshan-a-m-a54484a3/"
 title = "Junior Consultant"
-description = "DevOps Engineer,The most powerful tool we have as developers is automation."
+description = "DevOps enthusiast with a background in Automation Testing. A farm boy who likes gadgets and bikes."
 
 +++
