@@ -10,7 +10,7 @@ googleAnalytics = "UA-115982595-1"
 disqusShortname = "alvylconsulting"
 
 [Params]
-    tagline = "We build, therefore we are . . . "
+    tagline = "open source | data | cloud native "
     author = "Alvyl Creations"
     description = "Software Consulting services, Cloud Based SaaS platforms and DevOps."
     logoBig = "/images/alvylconsulting_logo_256px.svg"
