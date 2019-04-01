@@ -192,7 +192,7 @@ p {
 }
 h1, h2, h3 {
   font-family: $font-header;
-  margin-top: $vertical-rhythm + 1.2rem; //fixes navbar hiding headings
+  margin-top: $vertical-rhythm;
   letter-spacing: 2px;
   a {
     text-decoration: none;
