@@ -5,6 +5,6 @@ name = "Manisha Panda"
 image = "manisha.png"
 linkedin = "https://www.linkedin.com/in/manisha-panda-4928688b/"
 title = "Consultant"
-description = "As a UI/UX Engineer, I want to improve people's lives through design which makes business sense. I love Painting and Singing."
+description = "Wants to improve people's lives through UI/UX design which makes business sense. Loves Painting and Singing."
 
 +++
