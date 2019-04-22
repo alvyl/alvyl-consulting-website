@@ -1,5 +1,5 @@
 +++
-date = "2018-10-05T17:20:26+05:30"
+date = "2018-10-04T17:20:26+05:30"
 title = "Netcontrol GmbH"
 image = "netcontrol_logo.png"
 alt = "Netcontrol - Innovative provider of Internet-based IT solutions for business process optimization since 1995"
