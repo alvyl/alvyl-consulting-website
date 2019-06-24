@@ -5,6 +5,6 @@ name = "Venkatanatha Sarma Yerragudi"
 image = "venkat.png"
 linkedin = "https://www.linkedin.com/in/vsyerragudi/"
 title = "Data Science Consultant"
-description = "I love making things smart. I build the platforms that enable them."
+description = "Loves making things smart and building the platforms that enable them."
 
 +++

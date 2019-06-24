@@ -8,17 +8,10 @@ Alvyl Consulting is an energetic team of skilled consultants.
  
 We specialize in **`Open Source Technologies`** and have proven skills in building 
 
-- SaaS Platforms  
-- Cloud Native Applications
-- Cloud Infrastructure Monitoring  
-- Data Pipeline Design & Implementation 
-- Rest API Design & Development 
-- Enterprise Application Design & Development 
-- Web Application Design & Development 
-- Android Game Design & Development
-- Enterprise Data Migration
-- Enterprise Application Integration
-- DevOps Implementations
+- Software-as-a-Service (SaaS) & Web Apps
+- Cloud Native Computing Platforms
+- Data Analysis & Visualization Solutions  
+- DevOps Automation Tools
 
 Being a cross-functional team of software engineers with extensive experience in Start-ups, we have bootstrapped as well as augmented product teams to help them deliver high quality software products.
 
