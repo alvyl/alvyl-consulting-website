@@ -14,8 +14,4 @@ The contents of the public folder is not to be pushed as part of this repo. This
 - Run `hugo -d ../alvyl.github.io` assuming that the `alvyl.github.io` project and the alvyl-consulting-website projects are in the same parent folder and at same levels. 
 If not, then run the command `hugo -d <<path_to_alvyl.github.io_fork>>`.
 - Raise PR with the generated contents. On merging this, the changes must be visible in alvyl.com website.
-- Please talk to goutham@alvyl.com and/or hari@alvyl.com for any queries/more info on this. 
- 
- 
-  
-
+- Please talk to goutham@alvyl.com and/or hari@alvyl.com for any queries/more info on this.

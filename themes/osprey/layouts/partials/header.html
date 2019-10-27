@@ -61,6 +61,8 @@
         {{ if .Site.Params.highlightJS }}<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/github.min.css">{{ end }}
         {{ if .Site.GoogleAnalytics }}{{ template "_internal/google_analytics.html" . }}{{ end }}
 
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -88,6 +90,13 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         {{ end }}
+
+        <div class="row">
+            <div class="fl w-100 ba br3 br--bottom bg-light-green tc pa3 f5 lh-copy roboto bg-animate">
+                We have a new profile at 
+                <a class="link dark-pink hover-dark-pink" target="_blank" href="https://profile.alvyl.com">https://profile.alvyl.com</a>.
+            </div>
+        </div>
 
         {{ if .IsHome }}
         <header class="row middle-xs center-xs">
