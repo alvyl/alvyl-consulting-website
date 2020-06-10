@@ -6,17 +6,24 @@
         </div>
     </div>
 
+    {{ $teamCurrent :=  (where .Site.RegularPages.Reverse "Section" "team-current" ) }}
+    {{ $teamAlumni :=  (where .Site.RegularPages.Reverse "Section" "team-alumnus" ) }}
+
+    {{ $teams := slice $teamCurrent $teamAlumni }}
+
+    {{ range $teams }}
+
     <!--Ordering on the website depends on the date in their respective .md files, latest first-->
     <div class="row center-xs">
 
-        {{ $teamTotal := len (where .Site.RegularPages "Section" "team") }} 
-        {{ $teamReverse := (where .Site.RegularPages.Reverse "Section" "team") }}
+        {{ $teamAll := . }}
+        {{ $teamTotal := len (.) }}
 
         <!-- Where team is an odd total -->
         {{ if not (modBool $teamTotal 2) }}
             <!-- Where team is only one item, display it fully -->
             {{ if eq $teamTotal 1 }} 
-                {{ range first 3 $teamReverse }}
+                {{ range first 3 $teamAll }}
                 <div class="col-xs-12 col-md-3" {{ if .Params.color }}style="background-color:{{ .Params.color }}" {{ end }}>
                     <div class="row middle-xs center-xs">    
                             <a href="{{ .Params.linkedin}}">
@@ -33,6 +40,9 @@
                                 <span>
                                     {{ .Params.title }}
                                 </span>
+                                {{ if .Params.is_alumnus }}
+                                <br><span>(Alumnus)</span>
+                                {{ end }}
                             </p>
                         </div>
                         <div class="row middle-xs center-xs">
@@ -45,7 +55,7 @@
             {{ end }}
             <!-- Where team is greater than 2 items, first 3 items display together on first row -->
             {{ if gt $teamTotal 2 }} 
-                {{ range first 3 $teamReverse }}
+                {{ range first 3 $teamAll }}
                 <div class="col-xs-12 col-md-4" {{ if .Params.color }}style="background-color:{{ .Params.color }}" {{ end }}>
                     <div class="row middle-xs center-xs">    
                             <a href="{{ .Params.linkedin}}">                                
@@ -62,6 +72,9 @@
                                 <span>
                                     {{ .Params.title }}
                                 </span>
+                                {{ if .Params.is_alumnus }}
+                                <br><span>(Alumnus)</span>
+                                {{ end }}
                             </p>
                         </div>
                         <div class="row middle-xs center-xs">
@@ -74,7 +87,7 @@
             {{ end }}
             <!-- Where team is greater than 3 items, all items after the first 3 display evenly in grid colums and rows -->
             {{ if gt $teamTotal 3 }} 
-                {{ range after 3 $teamReverse }}
+                {{ range after 3 $teamAll }}
                 <!-- Where team items are divisible by 3, they will appear in columns of 3 -->
                 {{ $col := (mod $teamTotal 3) }}
                 <div class="col-xs-12 col-md-4
@@ -98,6 +111,9 @@
                                 <span>
                                     {{ .Params.title }}
                                 </span>
+                                {{ if .Params.is_alumnus }}
+                                <br><span>(Alumnus)</span>
+                                {{ end }}
                             </p>
                         </div>
                         <div class="row middle-xs center-xs">
@@ -112,7 +128,7 @@
 
         <!-- Where team is an even total, all items display evenly in grid columns and rows -->
         {{ if modBool $teamTotal 2 }} 
-            {{ range $teamReverse }}
+            {{ range $teamAll }}
             <!-- Where team items are great than 7 and are divisible by 4, they will appear in colums of 4, else in colums of 2 or 3 -->
             <div class="col-xs-12
                     {{ if gt $teamTotal 1 }} col-md-4
@@ -137,6 +153,9 @@
                             <span>
                                 {{ .Params.title }}
                             </span>
+                            {{ if .Params.is_alumnus }}
+                            <br><span>(Alumnus)</span>
+                            {{ end }}
                         </p>
                     </div>
                     <div class="row middle-xs center-xs">
@@ -148,5 +167,8 @@
             {{ end }} 
         {{ end }}
     </div>
+
+        
+    {{ end }}
 </div>
 </section>
