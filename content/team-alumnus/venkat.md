@@ -6,5 +6,6 @@ image = "venkat.png"
 linkedin = "https://www.linkedin.com/in/vsyerragudi/"
 title = "Data Science Consultant"
 description = "Loves making things smart and building the platforms that enable them."
+is_alumnus = true
 
 +++

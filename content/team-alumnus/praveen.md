@@ -6,5 +6,6 @@ image = "praveen.png"
 linkedin = "https://www.linkedin.com/in/praveen-kumar-165bb1127/"
 title = "Consultant"
 description = "Full Stack Developer with background in Automation Testing. Keen explorer of the Craft of Building Software. Loves Nature, Films, Cricket and Architecture"
+is_alumnus = true
 
 +++
