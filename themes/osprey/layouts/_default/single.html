@@ -4,9 +4,18 @@
         <section class="content">
             <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
 
-            <div class="sub-header">
-                {{ .Date.Format (.Site.Params.dateform | default "January 2006") }} · {{ .ReadingTime }} minute read
-            </div>
+            {{if .Params.imageUrl}}
+                <div class="row col-xs-12">
+                    <div class="row">
+                        <img src="{{.Params.imageUrl}}" height="75" width="75" style="border-radius: 50%;"/>
+                        <p class="post-title">
+                            <strong>{{.Params.author}}</strong><br/>
+                            {{ .Date.Format (.Site.Params.dateform | default "January 2006") }},{{ .ReadingTime }} minute read
+                        </p>
+                    </div>
+                </div>
+                <br/>
+            {{end}}
 
             <article class="entry-content">
                 {{ .Content }}
