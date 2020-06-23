@@ -47,3 +47,7 @@ disqusShortname = "alvylconsulting"
     name = "Contact"
     url  = "/#contact"
     weight = 4
+[[menu.main]]
+    name = "Blog"
+    url  = "/blog"
+    weight = 5    

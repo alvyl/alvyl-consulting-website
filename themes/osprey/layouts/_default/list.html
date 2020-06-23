@@ -2,17 +2,29 @@
 
     <section class="blog" id="blog">
         <div class="container">
-            <div class="row center-xs">
+            <!-- <div class="row center-xs">
                 <div class="col-xs-12"><h1>{{ humanize .Type }}</h1></div>
-            </div>
+            </div> -->
             <div class="row">
                 <div class="col-xs-12 posts-list">
                     {{ range .Data.Pages }}
                         <article>
                             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                            <div class=sub-header>
-                            {{ .Date.Format (.Site.Params.dateform | default "January 2006") }} · {{ .ReadingTime }} minute read
+                            <div class=blog-content>
+                              A  {{ .ReadingTime }} minute read, Posted by <span>{{.Params.author}}</span> on {{ .Date.Format (.Site.Params.dateform | default "January 2006") }}
                             </div>
+                            <!-- <div>
+                                {{ if isset .Params "tags"}}
+                                <span class=blog-content>
+                                    In <a href="#" title="{{ $.Scratch.Get "index" }}"></a>
+                                    {{ range $i, $e := .Params.tags -}}
+                                    {{- if $i -}}, {{ end -}}
+                                       <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
+                                    {{- end -}}
+                                </span>
+                                {{end }}
+                            </div> -->
+                            <hr>
                         </article>
                     {{ end }}
                 </div>

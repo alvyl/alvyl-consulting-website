@@ -9,6 +9,7 @@ $black: #212121;
 $storm: #4E6B6C;
 $smoke: #F7F7F7;
 $accent: #DA784D;
+$grey: grey;
 
 // Fonts
 $font-header: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -501,4 +502,23 @@ footer {
   div, a {
     color: #FFF;
   }
+}
+
+hr {
+  border-bottom: 1px solid #ccc;
+}
+
+.blog-content {
+  @include size(p);
+  color: $grey;
+  margin-bottom: 0.2rem;
+}
+
+.post-image {
+   border-radius: 50%;
+}
+
+.post-title{
+  padding: 0px 8px;
+  margin: 3% 0%;
 }
