@@ -161,3 +161,7 @@ If you'd like to help with the development of this theme, I encourage you to sub
 
 ## License
 This theme is released under the GNU 3.0 license. For more information read the [license](https://github.com/tomanistor/osprey/blob/master/LICENSE).
+
+
+## for compiling scss file
+sass --watch sassfilepath:cssfilepath --style compressed
