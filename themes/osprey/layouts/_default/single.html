@@ -21,14 +21,14 @@
                 {{ .Content }}
             </article>
 
-            <div class="pagination">
+            <!-- <div class="pagination">
                 {{ if .PrevInSection }}
                     <a href="{{ .PrevInSection.Permalink }}">&laquo; {{ .PrevInSection.Title }}</a>
                 {{ end }}
                 {{ if .NextInSection }}
                     <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} &raquo;</a>
                 {{ end }}
-            </div>
+            </div> -->
         </section>
         <br>
         {{ partial "disqus" . }}
