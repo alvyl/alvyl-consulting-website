@@ -49,5 +49,5 @@ disqusShortname = "alvylconsulting"
     weight = 4
 [[menu.main]]
     name = "Blog"
-    url  = "/blog"
+    url  = "/#blog"
     weight = 5    
