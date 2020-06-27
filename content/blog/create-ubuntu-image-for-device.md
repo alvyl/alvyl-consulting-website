@@ -3,7 +3,7 @@ title = "Creating Ubuntu Image for Device"
 date = 2020-06-26T18:21:37+05:30
 description = ""
 author = "Rahul Singh"
-imageUrl="images/rahul.png"
+imageUrl="/images/rahul.png"
 +++
 
 1) Download the Ubuntu image for your device in your **Downloads** folder using this link:
