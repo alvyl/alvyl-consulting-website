@@ -2,7 +2,6 @@
 title = "Map,Filter in Javascript"
 date = 2020-06-25T15:57:26+05:30
 description = ""
-draft = true
 author = "Priyanka Murahari"
 imageUrl = "/images/priyanka.png"
 +++
