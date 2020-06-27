@@ -2,7 +2,6 @@
 title: "Docker in Devops"
 date: 2020-06-26
 description: ""
-draft: true
 author: "Darshan A M"
 imageUrl: "/images/darshan.png"
 ---

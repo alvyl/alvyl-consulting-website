@@ -2,7 +2,6 @@
 title = "Creating Ubuntu Image for Device"
 date = 2020-06-26T18:21:37+05:30
 description = ""
-draft = true
 author = "Rahul Singh"
 imageUrl="images/rahul.png"
 +++
