@@ -12,7 +12,7 @@ In this blog, you’ll learn how to install ubuntu server **with password less S
   
   To follow this tutorial, you need:
     
-    - Raspberry Pi 2/3/4 board.
+    - Raspberry Pi 3b+ board.
 
     - 16GB or more microSD card.
 
@@ -60,9 +60,9 @@ In this blog, you’ll learn how to install ubuntu server **with password less S
     
     ssh_authorized_keys:
       - <ssh pub key 1>
-    ```
+    
 
-    ```
+    
     ## Add users and groups to the system, and import keys with the ssh-import-id
     users:
       - default
@@ -71,15 +71,13 @@ In this blog, you’ll learn how to install ubuntu server **with password less S
         sudo: ALL=(ALL) NOPASSWD:ALL
         ssh_authorized_keys:
           - <ssh pub key 1>
-    ```
+    
 
     Add this command in the last for rebooting the system:
     
-    ```
     runcmd:
      - [ sudo, reboot ]
-    ```
-
+    
 6) Edit the "network-config" file to setup Wifi . 
 
     ```  
@@ -90,14 +88,12 @@ In this blog, you’ll learn how to install ubuntu server **with password less S
         access-points:
           "abcd":
             password: "wxyz"
-    ```
-
+  
 7) After editing comprees the ubuntu image file using this command:
     
    ```
     xz -z raspi3.img
-    ```
-
+    
 8) Insert your microSD card and format it (macOS).
    
    Open a terminal window (Go to Application » Utilities, you will find the Terminal app there), then run the following command: **diskutil list**.Your removable drive must be DOS_FAT_32 formatted if not than go to disk utility and select your disk erase the data and change the format of disk to MS-DOS(FAT).
@@ -111,25 +107,24 @@ In this blog, you’ll learn how to install ubuntu server **with password less S
     diskutil unmountDisk < drive address >
    ```
 
-11) When successful, you should see a message similar to this one:
+10) When successful, you should see a message similar to this one:
     
    ```
     **Unmount of all volumes on < drive address > was successful**
    ```
 
-10)  You can now copy the image to the microSD card, using the following command:
+11)  You can now copy the image to the microSD card, using the following command:
 
    ```
     sudo sh -c 'gunzip -c ~/Downloads/raspi3.img.xz | sudo dd of=< drive address > bs=32m'
    ```
 
-11) Once the microSD is ready then insert the SD card into the Raspberry Pi and plug it into the   power supply.Than wait for the device to boot.
+12) Once the microSD is ready then insert the SD card into the Raspberry Pi and plug it into the   power supply.Than wait for the device to boot.
 
-12) SSH into the Raspberry Pi using this command.
+13) SSH into the Raspberry Pi using this command.
     
     ```
     ssh -i ~/.ssh/custom_key_name user@server
-    ```
-
-
+    
 Now,we have completed setting up the Raspberry Pi with Ubuntu Server **with password less SSH connection** init.
+  
