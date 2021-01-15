@@ -1,6 +1,6 @@
 +++
 
-date = "2021-01-12T00:00:00+05:30" 
+date = "2018-06-24T00:00:00+05:30" 
 name = "Milind Mantri"
 image = "milind.png"
 linkedin = "https://www.linkedin.com/in/milind-mantri/"
