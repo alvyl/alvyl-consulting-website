@@ -64,9 +64,9 @@ AWS Fargate is a serverless compute engine for containers that works with both A
 
 ![Fargate](/images/aws-fargate-app.png)
 
-## My personal experiance on docker
+## My personal experience on docker
 
-- Basic undurstanding of Computer science is enough to start a docker
-- Eaasy to install and easy to use.
-- Docker made developer to setup the local environmet easy.
+- Basic understanding of Computer science is enough to start a docker
+- Easy to install and easy to use.
+- Docker made developer to setup the local environment easy.
 - Increase the development speed.
