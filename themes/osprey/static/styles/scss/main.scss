@@ -454,7 +454,7 @@ blockquote {
 .blog {
   min-height: 100vh;
   h3 {
-    margin: 0 0 $vertical-rhythm;
+    font-size: 1.75rem !important;
     font-family: $font-body;
   }
 }
@@ -509,9 +509,9 @@ hr {
 }
 
 .blog-content {
-  @include size(p);
   color: $grey;
   margin-bottom: 0.2rem;
+  font-size: 1rem;
 }
 
 .post-image {
@@ -521,4 +521,9 @@ hr {
 .post-title{
   padding: 0px 8px;
   margin: 3% 0%;
+}
+
+.blog-title{
+  white-space: nowrap!important;
+  letter-spacing: 0px !important;
 }

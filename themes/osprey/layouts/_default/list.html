@@ -9,7 +9,7 @@
                 <div class="col-xs-12 posts-list">
                     {{ range .Data.Pages }}
                         <article>
-                            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                            <h3><a class="blog-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
                             <div class=blog-content>
                               A  {{ .ReadingTime }} minute read, Posted by <span>{{.Params.author}}</span> on {{ .Date.Format (.Site.Params.dateform | default "January 2006") }}
                             </div>
