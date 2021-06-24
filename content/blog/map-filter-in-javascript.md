@@ -1,5 +1,5 @@
 +++
-title = "Map,Filter in Javascript"
+title = "Map, Filter in JavaScript"
 date = 2020-06-25T15:57:26+05:30
 description = ""
 author = "Priyanka Murahari"
