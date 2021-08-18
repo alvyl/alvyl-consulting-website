@@ -1,10 +1,10 @@
 +++
 
-date = "2018-10-03T15:17:26+05:30"
+date = "2021-08-13T15:17:26+05:30"
 title = "TagBox Solutions"
-image = "tagbox_logo.png"
+image = "tagbox-logo.png"
 alt = "TagBox Solutions provides coldchain solution, food spoilage, product damage,real time signal for theft and pilferage"
-color = "#FFFFFF"
+color = "#234491"
 link1 = "https://www.tagbox.in/"
 link2 = ""
 
