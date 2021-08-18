@@ -1,5 +1,5 @@
 +++
-date = "2021-08-17T16:14:26+05:30"
+date = "2021-08-10T16:14:26+05:30"
 title = "Kargo Technologies"
 image = "kargo.png"
 alt = ""
