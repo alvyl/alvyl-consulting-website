@@ -6,5 +6,6 @@ image = "goutham.png"
 linkedin = "https://www.linkedin.com/in/goutham-atreya/"
 title = "Senior Software Engineer"
 description = "Believes in automating what can be, and utilize the time to make the world a better place."
+is_alumnus = true
 
 +++
